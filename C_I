@@ -1,7 +1,7 @@
 pipeline{
 agent any
 parameters {
-  choice choices: ['master', 'Dev'], description: 'Please select the Branch Name ', name: 'Branch'
+  choice choices: ['master', 'dev'], description: 'Please select the Branch Name ', name: 'Branch'
   booleanParam description: 'Please select to deploy the project on Master Branch', name: 'Deploy'
   string description: 'Please select the Environemnt', name: 'Environment'
 }
