@@ -11,7 +11,7 @@ stages{
   steps{
    script{
    echo "Cloning Started"
-   git branch: '$Branch', credentialsId: 'GIt_credentials', url: 'https://github.com/kvsharsha/B12_Pipeline_Scripts.git'
+   git branch: '$Branch', credentialsId: 'GIt_credentials', url: 'https://github.com/kvsharsha/sample_project.git'
    echo "Cloning Completed"
     }
    }
