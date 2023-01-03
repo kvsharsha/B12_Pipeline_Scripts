@@ -18,9 +18,9 @@ stages{
  steps{
  script{
  echo "Deploment Started"
- sh 'ssh root@172.31.30.38 /opt/tomcat/bin/shutdown.sh' 
+ sh 'ssh root@172.31.10.132 /opt/tomcat/bin/shutdown.sh' 
  sh 'scp -r /var/lib/jenkins/workspace/c_i/target/citibank.war root@172.31.10.132:/opt/tomcat/webapps/'
- sh 'ssh root@172.31.30.38 /opt/tomcat/bin/startup.sh'
+ sh 'ssh root@172.31.10.132 /opt/tomcat/bin/startup.sh'
  echo "Deployment Completed"
     }
    }
