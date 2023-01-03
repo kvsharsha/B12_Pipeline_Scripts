@@ -47,7 +47,7 @@ stages{
 stage("Calling CD Job"){
 steps{
  script{
-      build job: 'continous-deployement', parameters: [
+      build job: 'C_D', parameters: [
 	  string(name: 'Branch', value:"${params.Branch}"),
 	  string(name:'Deploy', value: "${params.Deploy}"),
 	  string(name:'Environment', value: "${params.Environment}")]
